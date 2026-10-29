@@ -1,0 +1,1094 @@
+[
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T20:50:20.905161"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T20:50:39.807214"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T20:59:00.684109"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T20:59:03.391449",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_205902_953658_52.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_205902_953658_52.jpg"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T21:04:28.168221"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-09T21:04:29.235184"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-09T21:04:30.832840"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T21:04:35.702114",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_210435_586840_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_210435_586840_181.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T21:05:50.526869",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_210550_226910_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_210550_226910_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:09:51.121218",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_220950_711347_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_220950_711347_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:17:14.631290",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_221714_163799_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_221714_163799_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:17:44.575792",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_221730_152938_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_221730_152938_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:17:44.914068",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_221730_152938_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_221730_152938_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:17:45.342789",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_221730_152938_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_221730_152938_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:17:45.962109",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_221730_152938_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_221730_152938_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:21:27.138089",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222126_757484_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222126_757484_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:22:38.365298",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222238_073739_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222238_073739_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:23:09.748858",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222309_412132_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222309_412132_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:23:30.533784",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222330_279535_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222330_279535_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:23:53.898460",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222353_616540_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222353_616540_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:24:22.395239",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222408_497893_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222408_497893_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:24:22.708764",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222408_497893_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222408_497893_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:24:23.124669",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222408_497893_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222408_497893_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:24:23.802649",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222408_497893_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222408_497893_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:24:50.774292",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222450_496822_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222450_496822_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:25:19.044247",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222505_203259_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222505_203259_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:25:19.370656",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222505_203259_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222505_203259_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:25:19.774960",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222505_203259_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222505_203259_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T22:25:20.427420",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_222505_203259_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_222505_203259_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-09T23:10:28.298694",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261009_231027_867524_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261009_231027_867524_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:20:05.121069",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_112004_664007_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_112004_664007_1.jpg"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:20:54.355179"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:20:57.170724",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_112056_791284_52.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_112056_791284_52.jpg"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:26:00.987031"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:26:03.824964",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_112603_413055_52.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_112603_413055_52.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:26:38.854401",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_112638_307778_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_112638_307778_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:32:24.711891",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_113224_204943_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_113224_204943_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:32:24.778237"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:32:29.750921"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:32:38.117298"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:34:54.897053",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_113454_581848_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_113454_581848_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:34:54.917155"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:34:59.876966"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:35:12.132599"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:35:55.890751",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_113555_432661_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_113555_432661_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:35:55.961403"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:36:01.332461"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:36:10.549569"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T11:53:44.976156",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_115344_532728_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_115344_532728_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:53:45.004232"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:53:50.249724"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T11:54:00.580024"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T14:23:28.911509",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_142328_476440_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_142328_476440_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T14:23:28.984840"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T14:23:34.520644"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T14:23:43.007481"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T14:24:28.764755",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_142428_317571_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_142428_317571_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T14:59:12.374457",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_145911_917227_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_145911_917227_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:01:35.275682",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_150134_836291_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_150134_836291_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:01:59.082939",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_150158_717609_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_150158_717609_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:01:59.145305"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:02:04.055375"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:02:12.166333"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:03:43.886417"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:03:45.183909"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:03:47.145469"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:03:52.800515",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_150352_699191_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_150352_699191_181.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:03:59.068703"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:04:05.091664"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:04:15.127149",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_150352_699191_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_150352_699191_181.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:04:17.437382",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_150352_699191_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_150352_699191_181.jpg"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:45:53.553324"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:45:55.042686"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:45:56.899208"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:46:02.700329",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_154602_597404_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_154602_597404_181.jpg"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:46:20.727904"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:46:21.910069"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:46:23.500047"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:46:28.942499",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_154628_847922_181.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_154628_847922_181.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T15:48:24.595783",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_154824_233785_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_154824_233785_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:48:24.620771"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:48:29.275215"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T15:48:37.339164"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:12:07.723668",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161207_249577_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161207_249577_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T16:12:07.757614"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T16:12:13.249182"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T16:12:23.512476"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:12:59.848268",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161259_481319_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161259_481319_1.jpg"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T16:12:59.881538"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-10-10T16:13:05.150844"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:13:55.663970",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161355_166663_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161355_166663_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:14:35.215104",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161415_401619_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161415_401619_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:14:35.688118",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161415_401619_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161415_401619_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:14:36.299668",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161415_401619_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161415_401619_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-10T16:14:37.171618",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261010_161415_401619_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261010_161415_401619_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-15T21:09:29.971673",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261015_210929_669461_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261015_210929_669461_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-15T21:10:00.659724",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261015_210946_459644_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261015_210946_459644_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-15T21:10:00.948887",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261015_210946_459644_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261015_210946_459644_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-15T21:10:01.371285",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261015_210946_459644_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261015_210946_459644_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-15T21:10:01.970813",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261015_210946_459644_245.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261015_210946_459644_245.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-10-29T21:14:16.666752",
+        "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261029_211416_321259_1.jpg",
+        "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261029_211416_321259_1.jpg"
+    }
+]
