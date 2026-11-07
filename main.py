@@ -17,9 +17,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "model")
 INPUT_DIR = os.path.join(BASE_DIR, "input")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
-SNAPSHOT_DIR = os.path.join(OUTPUT_DIR, "snapshots")
-
-os.makedirs(SNAPSHOT_DIR, exist_ok=True)
 
 PPE_MODEL_PATH = os.path.join(MODEL_DIR, "best.pt")
 FIRE_MODEL_PATH = os.path.join(MODEL_DIR, "fire_smoke_best.pt")
@@ -73,8 +70,6 @@ PPE_CONFIDENCE = 0.40
 PPE_VOTE_WINDOW = 5
 PPE_VOTE_THRESHOLD = 3
 
-SNAPSHOT_INTERVAL = 30
-
 
 # =========================================================
 # FIRE / SMOKE SETTINGS
@@ -100,9 +95,11 @@ CAMERA_ID = "CAM_01"
 # =========================================================
 
 def save_event(event):
+
     events = []
 
     if os.path.exists(EVENT_FILE):
+
         try:
             with open(EVENT_FILE, "r", encoding="utf-8") as file:
                 events = json.load(file)
@@ -124,93 +121,12 @@ def save_event(event):
 
 
 # =========================================================
-# SNAPSHOT SCORING
-# =========================================================
-
-def calculate_snapshot_score(frame, person_box):
-    x1, y1, x2, y2 = person_box
-
-    height, width = frame.shape[:2]
-
-    x1 = max(0, min(width, x1))
-    y1 = max(0, min(height, y1))
-    x2 = max(0, min(width, x2))
-    y2 = max(0, min(height, y2))
-
-    person_crop = frame[y1:y2, x1:x2]
-
-    if person_crop.size == 0:
-        return 0.0
-
-    gray = cv2.cvtColor(person_crop, cv2.COLOR_BGR2GRAY)
-
-    sharpness = cv2.Laplacian(
-        gray,
-        cv2.CV_64F
-    ).var()
-
-    person_area = (x2 - x1) * (y2 - y1)
-    frame_area = width * height
-
-    if frame_area == 0:
-        return 0.0
-
-    person_size_ratio = person_area / frame_area
-
-    return sharpness * person_size_ratio
-
-
-# =========================================================
-# SAVE SNAPSHOTS
-# =========================================================
-
-def save_snapshot(frame, person_box, frame_number):
-
-    x1, y1, x2, y2 = person_box
-
-    height, width = frame.shape[:2]
-
-    x1 = max(0, min(width, x1))
-    y1 = max(0, min(height, y1))
-    x2 = max(0, min(width, x2))
-    y2 = max(0, min(height, y2))
-
-    person_crop = frame[y1:y2, x1:x2]
-
-    if person_crop.size == 0:
-        return None
-
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-
-    person_path = os.path.join(
-        SNAPSHOT_DIR,
-        f"person_{timestamp}_{frame_number}.jpg"
-    )
-
-    context_path = os.path.join(
-        SNAPSHOT_DIR,
-        f"context_{timestamp}_{frame_number}.jpg"
-    )
-
-    if not cv2.imwrite(person_path, person_crop):
-        return None
-
-    if not cv2.imwrite(context_path, frame):
-        return None
-
-    return {
-        "person_snapshot": person_path,
-        "context_snapshot": context_path
-    }
-
-
-# =========================================================
 # MAIN VIDEO PROCESSING
 # =========================================================
 
 def process_video(video_path):
 
-    # FIX: Initialize events before any events.append() calls.
+    # Initialize events
     events = []
 
     if not os.path.exists(video_path):
@@ -242,14 +158,8 @@ def process_video(video_path):
     fire_safe_frames = 0
     smoke_safe_frames = 0
 
-    frame_count = 0
-
-    best_snapshot_score = 0.0
-    best_snapshot = None
-
-    last_snapshot_frame = -SNAPSHOT_INTERVAL
-
     try:
+
         while True:
 
             ret, frame = cap.read()
@@ -258,9 +168,6 @@ def process_video(video_path):
                 print("Video ended or frame could not be read.")
                 break
 
-            frame_count += 1
-
-            # Keep an unannotated copy for snapshots.
             original_frame = frame.copy()
 
             # =================================================
@@ -275,7 +182,6 @@ def process_video(video_path):
 
             current_ppe = set()
             person_detected = False
-            person_boxes = []
 
             for result in ppe_results:
 
@@ -298,11 +204,11 @@ def process_video(video_path):
 
                     if class_name == "person":
                         person_detected = True
-                        person_boxes.append((x1, y1, x2, y2))
 
                     elif class_name in required_ppe:
                         current_ppe.add(class_name)
 
+                    # Draw bounding box
                     cv2.rectangle(
                         frame,
                         (x1, y1),
@@ -320,57 +226,6 @@ def process_video(video_path):
                         (0, 255, 0),
                         2
                     )
-
-            # =================================================
-            # BEST SNAPSHOT SELECTION
-            # =================================================
-
-            if (
-                person_boxes
-                and frame_count - last_snapshot_frame >= SNAPSHOT_INTERVAL
-            ):
-
-                best_candidate = None
-                best_candidate_score = 0.0
-
-                for person_box in person_boxes:
-
-                    score = calculate_snapshot_score(
-                        original_frame,
-                        person_box
-                    )
-
-                    if score > best_candidate_score:
-                        best_candidate_score = score
-                        best_candidate = person_box
-
-                if (
-                    best_candidate is not None
-                    and best_candidate_score > best_snapshot_score
-                ):
-
-                    snapshot_paths = save_snapshot(
-                        original_frame,
-                        best_candidate,
-                        frame_count
-                    )
-
-                    if snapshot_paths is not None:
-
-                        best_snapshot_score = best_candidate_score
-
-                        best_snapshot = {
-                            **snapshot_paths,
-                            "score": best_candidate_score,
-                            "frame_number": frame_count
-                        }
-
-                        last_snapshot_frame = frame_count
-
-                        print(
-                            "New best snapshot saved:",
-                            snapshot_paths["person_snapshot"]
-                        )
 
             # =================================================
             # PPE TEMPORAL VOTING
@@ -394,9 +249,11 @@ def process_video(video_path):
                         len(history) >= PPE_VOTE_THRESHOLD
                         and history.count(0) >= PPE_VOTE_THRESHOLD
                     ):
+
                         confirmed_missing_ppe.append(item)
 
             else:
+
                 for history in ppe_history.values():
                     history.clear()
 
@@ -408,39 +265,34 @@ def process_video(video_path):
 
                 if not ppe_violation_active:
 
-                    snapshot_paths = None
-
-                    if best_snapshot is not None:
-                        snapshot_paths = {
-                            "person_snapshot": best_snapshot["person_snapshot"],
-                            "context_snapshot": best_snapshot["context_snapshot"]
-                        }
-
                     ppe_event = {
+
                         "event_type": "PPE_VIOLATION",
+
                         "camera_id": CAMERA_ID,
+
                         "status": "NON-COMPLIANT",
+
                         "missing_ppe": confirmed_missing_ppe.copy(),
+
                         "severity": "HIGH",
-                        "timestamp": datetime.now().isoformat(),
-                        "person_snapshot": (
-                            snapshot_paths["person_snapshot"]
-                            if snapshot_paths else None
-                        ),
-                        "context_snapshot": (
-                            snapshot_paths["context_snapshot"]
-                            if snapshot_paths else None
-                        )
+
+                        "timestamp": datetime.now().isoformat()
+
                     }
 
                     print(ppe_event)
+
                     save_event(ppe_event)
+
                     events.append(ppe_event)
 
                     ppe_alarm.play()
+
                     ppe_violation_active = True
 
             else:
+
                 ppe_violation_active = False
 
             # =================================================
@@ -476,6 +328,7 @@ def process_video(video_path):
                     elif class_name == "smoke":
                         smoke_detected_this_frame = True
 
+                    # Draw fire/smoke box
                     x1, y1, x2, y2 = map(
                         int,
                         box.xyxy[0].tolist()
@@ -535,18 +388,27 @@ def process_video(video_path):
                 if not fire_event_active:
 
                     fire_event = {
+
                         "event_type": "FIRE_DETECTED",
+
                         "camera_id": CAMERA_ID,
+
                         "status": "DANGER",
+
                         "severity": "CRITICAL",
+
                         "timestamp": datetime.now().isoformat()
+
                     }
 
                     print(fire_event)
+
                     save_event(fire_event)
+
                     events.append(fire_event)
 
                     fire_alarm.play()
+
                     fire_event_active = True
 
             elif fire_event_active:
@@ -554,7 +416,9 @@ def process_video(video_path):
                 fire_safe_frames += 1
 
                 if fire_safe_frames >= FIRE_RESET_FRAMES:
+
                     fire_event_active = False
+
                     fire_safe_frames = 0
 
             # =================================================
@@ -568,18 +432,27 @@ def process_video(video_path):
                 if not smoke_event_active:
 
                     smoke_event = {
+
                         "event_type": "SMOKE_DETECTED",
+
                         "camera_id": CAMERA_ID,
+
                         "status": "DANGER",
+
                         "severity": "HIGH",
+
                         "timestamp": datetime.now().isoformat()
+
                     }
 
                     print(smoke_event)
+
                     save_event(smoke_event)
+
                     events.append(smoke_event)
 
                     fire_alarm.play()
+
                     smoke_event_active = True
 
             elif smoke_event_active:
@@ -587,7 +460,9 @@ def process_video(video_path):
                 smoke_safe_frames += 1
 
                 if smoke_safe_frames >= SMOKE_RESET_FRAMES:
+
                     smoke_event_active = False
+
                     smoke_safe_frames = 0
 
             # =================================================
@@ -620,11 +495,13 @@ def process_video(video_path):
             elif person_detected:
 
                 ppe_status = "PPE: NO MISSING ITEMS DETECTED"
+
                 ppe_color = (0, 255, 0)
 
             else:
 
                 ppe_status = "PPE: NO PERSON DETECTED"
+
                 ppe_color = (255, 255, 255)
 
             cv2.putText(
@@ -660,6 +537,7 @@ def process_video(video_path):
             else:
 
                 fire_status = "FIRE/SMOKE: NO DETECTION CONFIRMED"
+
                 fire_color = (0, 255, 0)
 
             cv2.putText(
@@ -672,7 +550,10 @@ def process_video(video_path):
                 2
             )
 
-            # Resize only the displayed frame
+            # =================================================
+            # DISPLAY FRAME
+            # =================================================
+
             display_frame = frame.copy()
 
             height, width = display_frame.shape[:2]
@@ -681,22 +562,27 @@ def process_video(video_path):
             max_height = 720
 
             scale = min(
-            max_width / width,
-            max_height / height,
-             1.0)
+                max_width / width,
+                max_height / height,
+                1.0
+            )
 
             new_width = int(width * scale)
             new_height = int(height * scale)
 
             display_frame = cv2.resize(
                 display_frame,
-                 (new_width, new_height)
-)
+                (new_width, new_height)
+            )
 
             cv2.imshow(
-    "BPUT AI Safety Monitoring",
-    display_frame
-)
+                "BPUT AI Safety Monitoring",
+                display_frame
+            )
+
+            # =================================================
+            # PRESS Q TO EXIT
+            # =================================================
 
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 break
@@ -704,7 +590,9 @@ def process_video(video_path):
     finally:
 
         cap.release()
+
         cv2.destroyAllWindows()
+
         pygame.mixer.quit()
 
         print("System stopped")
@@ -720,7 +608,7 @@ if __name__ == "__main__":
 
     video_path = os.path.join(
         INPUT_DIR,
-        "construction2.mp4"
+        "construction.mp4"
     )
 
     process_video(video_path)

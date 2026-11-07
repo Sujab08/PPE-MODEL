@@ -1090,5 +1090,177 @@
         "timestamp": "2026-10-29T21:14:16.666752",
         "person_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\person_20261029_211416_321259_1.jpg",
         "context_snapshot": "C:\\Users\\kumar\\Downloads\\AI-POWERED-SAFETY-GEAR-COMPLIANCE\\ai-model\\output\\snapshots\\context_20261029_211416_321259_1.jpg"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:52:08.751175"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:52:50.925959"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:52:51.384437"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:52:52.066148"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:52:53.111211"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:53:14.119378"
+    },
+    {
+        "event_type": "SMOKE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:53:35.068370"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:53:36.350553"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:53:38.649522"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves",
+            "shoes"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:53:44.241148"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:54:58.550783"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:54:58.592172"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:55:03.677807"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:55:11.251189"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T10:56:00.737068"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:56:00.780899"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:56:06.188397"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T10:56:14.631037"
     }
 ]
