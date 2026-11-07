@@ -1262,5 +1262,24 @@
         "status": "DANGER",
         "severity": "CRITICAL",
         "timestamp": "2026-11-07T10:56:14.631037"
+    },
+    {
+        "event_type": "PPE_VIOLATION",
+        "camera_id": "CAM_01",
+        "status": "NON-COMPLIANT",
+        "missing_ppe": [
+            "helmet",
+            "safety-vest",
+            "gloves"
+        ],
+        "severity": "HIGH",
+        "timestamp": "2026-11-07T17:20:31.576770"
+    },
+    {
+        "event_type": "FIRE_DETECTED",
+        "camera_id": "CAM_01",
+        "status": "DANGER",
+        "severity": "CRITICAL",
+        "timestamp": "2026-11-07T17:20:31.614530"
     }
 ]

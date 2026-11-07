@@ -8,9 +8,7 @@ from collections import deque
 from datetime import datetime
 
 
-# =========================================================
 # PROJECT PATHS
-# =========================================================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,10 +24,7 @@ FIRE_ALARM_PATH = os.path.join(BASE_DIR, "fire_alarm.wav")
 
 EVENT_FILE = os.path.join(BASE_DIR, "events.json")
 
-
-# =========================================================
 # LOAD MODELS
-# =========================================================
 
 if not os.path.exists(PPE_MODEL_PATH):
     raise FileNotFoundError(f"PPE model not found: {PPE_MODEL_PATH}")
@@ -44,20 +39,14 @@ print("Both models loaded successfully")
 print("PPE model:", ppe_model.names)
 print("Fire model:", fire_model.names)
 
-
-# =========================================================
 # ALARMS
-# =========================================================
 
 pygame.mixer.init()
 
 ppe_alarm = pygame.mixer.Sound(PPE_ALARM_PATH)
 fire_alarm = pygame.mixer.Sound(FIRE_ALARM_PATH)
 
-
-# =========================================================
 # PPE SETTINGS
-# =========================================================
 
 required_ppe = [
     "helmet",
@@ -71,9 +60,7 @@ PPE_VOTE_WINDOW = 5
 PPE_VOTE_THRESHOLD = 3
 
 
-# =========================================================
 # FIRE / SMOKE SETTINGS
-# =========================================================
 
 FIRE_CONFIDENCE = 0.40
 FIRE_VOTE_WINDOW = 5
@@ -83,16 +70,12 @@ FIRE_RESET_FRAMES = 10
 SMOKE_RESET_FRAMES = 10
 
 
-# =========================================================
 # EVENT SETTINGS
-# =========================================================
 
 CAMERA_ID = "CAM_01"
 
 
-# =========================================================
 # SAVE EVENT
-# =========================================================
 
 def save_event(event):
 
@@ -120,9 +103,7 @@ def save_event(event):
     os.replace(temp_file, EVENT_FILE)
 
 
-# =========================================================
 # MAIN VIDEO PROCESSING
-# =========================================================
 
 def process_video(video_path):
 
@@ -170,9 +151,7 @@ def process_video(video_path):
 
             original_frame = frame.copy()
 
-            # =================================================
             # PPE DETECTION
-            # =================================================
 
             ppe_results = ppe_model.predict(
                 frame,
@@ -227,9 +206,7 @@ def process_video(video_path):
                         2
                     )
 
-            # =================================================
             # PPE TEMPORAL VOTING
-            # =================================================
 
             confirmed_missing_ppe = []
 
@@ -257,9 +234,7 @@ def process_video(video_path):
                 for history in ppe_history.values():
                     history.clear()
 
-            # =================================================
             # PPE EVENT
-            # =================================================
 
             if confirmed_missing_ppe:
 
@@ -295,9 +270,7 @@ def process_video(video_path):
 
                 ppe_violation_active = False
 
-            # =================================================
             # FIRE / SMOKE DETECTION
-            # =================================================
 
             fire_results = fire_model.predict(
                 original_frame,
@@ -352,9 +325,7 @@ def process_video(video_path):
                         2
                     )
 
-            # =================================================
             # FIRE / SMOKE TEMPORAL VOTING
-            # =================================================
 
             fire_history.append(
                 1 if fire_detected_this_frame else 0
@@ -377,9 +348,7 @@ def process_video(video_path):
                 and smoke_votes >= FIRE_VOTE_THRESHOLD
             )
 
-            # =================================================
             # FIRE EVENT
-            # =================================================
 
             if confirmed_fire:
 
@@ -421,9 +390,7 @@ def process_video(video_path):
 
                     fire_safe_frames = 0
 
-            # =================================================
             # SMOKE EVENT
-            # =================================================
 
             if confirmed_smoke:
 
@@ -465,9 +432,7 @@ def process_video(video_path):
 
                     smoke_safe_frames = 0
 
-            # =================================================
             # DISPLAY TITLE
-            # =================================================
 
             cv2.putText(
                 frame,
@@ -479,9 +444,7 @@ def process_video(video_path):
                 2
             )
 
-            # =================================================
             # DISPLAY PPE STATUS
-            # =================================================
 
             if confirmed_missing_ppe:
 
@@ -514,9 +477,7 @@ def process_video(video_path):
                 2
             )
 
-            # =================================================
             # DISPLAY FIRE / SMOKE STATUS
-            # =================================================
 
             if confirmed_fire:
 
@@ -599,10 +560,7 @@ def process_video(video_path):
 
     return events
 
-
-# =========================================================
 # RUN PROJECT
-# =========================================================
 
 if __name__ == "__main__":
 
